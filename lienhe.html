@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+      
+    </head>
+<body>
+    <div class="container">
+    <header>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+      
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/chitiet_benner_header.png" alt="Los Angeles" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/gioithieu_header.jpg" alt="Chicago" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/61.jpg" alt="New York" class="d-block w-100">
+              </div>
+            </div>
+      
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+    </header>
+    <div class="container">
+        <script>
+            $(Document).ready(function () {
+                $('.toggle').click(function () {
+                    $('nav').slideToggle();
+                });
+            });
+            $(Document).ready(function () {
+                $('.toggle1').click(function () {
+                    $('.nav1').slideToggle();
+                });
+            });
+        </script>
+        <div class="toggle">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <span style="">Serene</span>
+        </div>
+        <nav>
+            <img class="logo_serene" src="img/logo_serene.png" alt="">
+            <ul class="main-menu">
+                <li>
+                    <a href="index.html">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="gioithieu.html">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="lienhe.html">Liên hệ</a>
+                </li>
+                <li>
+                    <a href="dangnhap.html"> đăng nhập</a>
+                </li>
+                <li>
+                    <a href="dangki.html">  đăng kí</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="article_lienhe">
+            <div class="anh_vit"><img src="img/tenor.gif" alt=""></div>
+            <div class="anh_vit1"><img src="img/tenor1.gif" alt=""></div>
+            <div class="khung_lienhe">
+                <form>
+                    <div class="form_group">
+                        <label class="chu">Họ Và tên</label><br>
+                        <input type="text" placeholder="Nhập họ và tên" style="width: 180px; height: 25px;">
+                    </div>
+                  
+                    <div class="form_group">
+                        <label class="chu">Địa chỉ</label><br>
+                        <input type="text" placeholder="Nhập địa chỉ" style="width: 300px; height: 25px;">
+                    </div>
+                    <div class="form_group">
+                        <label class="chu">Điện thoại</label><br>
+                        <input type="text" placeholder="Nhập số diện thoại" style="width: 300px; height: 25px;">
+                    </div>
+                    <div class="form_group">
+                        <label class="chu">Email</label><br>
+                        <input type="email" placeholder="Nhập email" style="width: 300px; height: 25px;">
+                    </div>
+
+                    <div class="form_group" style="font-size: 20px;">
+                        <legend>Giới tính</legend>
+                        <input type="radio" name="render">Nam
+                        <input type="radio" name="render">Nữ
+                </div>
+                    <div class="form_group">
+                        <label class="chu">Dịch vụ đề xuất</label><br>
+                        <input type="checkbox">Tư vấn bán hàng
+                        <input type="checkbox">Hỗ trợ khác hàng
+                        <input type="checkbox">Quyền lợi khác hàng
+                        <input type="checkbox">Đăng kích các gói
+                        <input type="checkbox">Báo cáo
+                        <input type="checkbox">Hướng dẫn
+                    </div>
+                    <div class="form_group">
+                        <button class="form_button">Gửi</button>
+                        <button class="form_button">Nhập lại</button>
+                    </div>
+                    <div class="form_group">
+                        <input type="checkbox">
+                        <label>Remmember me?</label>
+                    </div>
+                    <hr>
+                    <div class="form_group">
+                        <label class="chu">Ghi chú</label><br>
+                        <textarea class="ghichu" name="" id="" cols="60" rows="5" placeholder="hay viết mong muốn của bạn taị đây"></textarea>
+                    </div>
+                </form>
+                <div class="quytrtrinhdathang_lienhe">
+                    <img src="img/quytrinhdathang.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="bando_lienhe">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1lTIpoC_FjMqQ-TpVfDEl6gfnn9sxPtI&ehbc=2E312F" width="640" height="480"></iframe>
+        </div>
+        <div class="thongtin">
+            <div class="icon-tintuc">
+                <h2><img src="img/menu-ico-1.png" alt=""><strong>THÔNG TIN KHÁC</strong></h2><hr color="red">
+            </div>
+            <div class="layout-tintuc">
+               
+                <div class="tintuc">
+                    <a href="">
+                        <img src="img/lienhe_thongtinkhac1.png" alt="">
+                        <h3>Up line vào vị trí ngay nào</h3>
+                    </a>
+                </div>
+                <div class="tintuc">
+                    <a href="">
+                        <img src="img/lienhe_thongtinkhac2.jpg" alt="">
+                        <h3>Kí kết với nhều đối tác lớn </h3>
+                    </a>
+                </div>
+
+                <div class="tintuc">
+                    <a href="">
+                        <img src="img/gioithieu_chu3.2.png" alt="">
+                        <h3>hợp lực cùng nhau </h3>
+                    </a>
+                </div>
+                
+               
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-cot1">
+            <div class="footer-cot1-chu">
+                <h1>CHĂM SÓC KHÁC HÀNG</h1><br>
+                <ul>
+                    <li><a href="">Trung Tâm Trợ Giúp</a><br></li>
+                    <li><a href="">Hướng Dẫn Mua Hàng</a><br></li>
+                    <li><a href="">Thanh Toán</a><br></li>
+                    <li><a href="">Trả Hàng & Hoàn Tiền</a><br></li>
+                    <li><a href="">Chính Sách Bảo Hành</a><br></li>
+                    <li><a href="">Chăm Sóc Khách Hàng</a><br></li>
+                    <li><a href="">Vận Chuyển</a><br></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-cot2">
+            <div class="footer-cot2-chu">
+                <h1>VỀ SHOP</h1><br>
+                <ul>
+                    <li><a href="">Trung Tâm Trợ Giúp</a><br></li>
+                    <li><a href="">Hướng Dẫn Mua Hàng</a><br></li>
+                    <li><a href="">Thanh Toán</a><br></li>
+                    <li><a href="">Trả Hàng & Hoàn Tiền</a><br></li>
+                    <li><a href="">Chính Sách Bảo Hành</a><br></li>
+                    <li><a href="">Chăm Sóc Khách Hàng</a><br></li>
+                    <li><a href="">Vận Chuyển</a><br></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-cot3">
+            <div class="footer-cot3-chu">
+                <h1>THANH TOÁN</h1><br>
+                <ul>
+                    <li><a href=""><img src="img/footer_nganhang.png" alt=""></a></li>
+                    <li><a href=""><img src="img/footer_nganhang1.png" alt=""></a></li>
+                    <li><a href=""><img src="img/footer_nganhang2.png" alt=""></a><br></li>
+                    <li><a href=""><img src="img/footer_nganhang3.png" alt=""></a></li>
+                    <li><a href=""><img src="img/footer_nganhang4.png" alt=""></a></li>
+                    <li><a href=""><img src="img/footer_nganhang5.png" alt=""></a><br></li>
+                    <li><a href=""><img src="img/footer_nganhang6.png" alt=""></a></li>
+                    <li><a href=""><img src="img/footer_nganhang7.png" alt=""></a></li>
+                </ul>
+                <h1>VẬN CHUYỂN</h1><br>
+                <ul>
+                    <li><a href=""><img src="img/footer_vanchuyen.png" alt=""></a></li>
+                    <li><a href=""><img src="img/footer_vanchuyen1.png" alt=""></a></li>
+                    <li><a href=""><img src="img/footer_vanchuyen2.png" alt=""></a><br></li>
+                    <li><a href=""><img src="img/footer_vanchuyen3.png" alt=""></a></li>
+                    <li><a href=""><img src="img/footer_vanchuyen4.png" alt=""></a></li>
+                    <li><a href=""><img src="img/footer_vanchuyen5.png" alt=""></a><br></li>
+                    <li><a href=""><img src="img/footer_vanchuyen6.png" alt=""></a></li>
+                    <li><a href=""><img src="img/footer_vanchuyen7.png" alt=""></a></li>
+                    <li><a href=""><img src="img/footer_vanchuyen8.png" alt=""></a></li>
+                    <li><a href=""><img src="img/footer_vanchuyen9.png" alt=""></a></li>
+                   
+                </ul>
+            </div>
+        </div>
+        <div class="footer-cot4">
+            <div class="footer-diachi1-chu">
+                <h1>TẢI ỨNG DỤNG NGAY THÔI</h1><br>
+                <div class="footer-cot2-chu">
+                    <ul>
+                        <li><a href=""><img src="img/QR.png" alt=""></a></li>
+                        <li><a href=""><img src="img/appstore.png" alt=""></a><br></li>
+                        <li><a href=""><img src="img/appgallery.png" alt=""></a><br></li>
+                        <li><a href=""><img src="img/googleplay.png" alt=""></a><br></li>
+                    </ul>
+                </div>
+            </div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v19.0&appId=745660680959157" nonce="7j1anPJm"></script>
+            
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
